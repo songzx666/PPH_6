@@ -200,8 +200,8 @@ if st.button('Predict'):
             components.html(shap_html, width=width,height=height,scrolling=True)
         if prediction >0.13193563:
             st.write(f"The Probability of Postpartum Hemorrhage is: {prediction1}，the Risk of Postpartum Hemorrhage is HIGH")          
-            st_shap(shap.force_plot(explainer.expected_value, shap_values[0,:], data.iloc[0,:]),1000,400,scrolling=True)
+            st_shap(shap.force_plot(explainer.expected_value, shap_values[0,:], data.iloc[0,:]),4000,400,scrolling=True)
         else:
             st.write(f"The Probability of Postpartum Hemorrhage is: {prediction1}，the Risk of Postpartum Hemorrhage is LOW")  
-            st_shap(shap.force_plot(explainer.expected_value, shap_values[0,:], data.iloc[0,:]),1000,400,scrolling=True)
+            st_shap(shap.force_plot(explainer.expected_value, shap_values[0,:], data.iloc[0,:]),4000,400,scrolling=True)
 
