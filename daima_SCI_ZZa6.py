@@ -70,36 +70,36 @@ if D7<43 or D7>60:
 
 ##分类变量
 #'A4','C9','C4','D1','D8',
-A4_1=st.selectbox('Occupation:',['Unemployed','Light physical labor','Moderate physical labor','Heavy physical labor'])
-C9_1=st.selectbox('Premature rupture of membranes:',['No','Yes'])
-C4_1=st.selectbox('Anemia:',['No','Yes'])
+A4_1=st.selectbox('Occupation:',['0:Unemployed','1:Light physical labor','2:Moderate physical labor','3:Heavy physical labor'])
+C9_1=st.selectbox('Premature rupture of membranes:',['0:No','1:Yes'])
+C4_1=st.selectbox('Anemia:',['0:No','1:Yes'])
 D1_1=st.selectbox('Time of delivery:',['0 o_clock','1 o_clock','2 o_clock','3 o_clock','4 o_clock','5 o_clock','6 o_clock','7 o_clock',
                            '8 o_clock','9 o_clock','10 o_clock','11 o_clock','12 o_clock','13 o_clock','14 o_clock','15 o_clock',
                           '16 o_clock','17 o_clock','18 o_clock','19 o_clock','20 o_clock','21 o_clock','22 o_clock','23 o_clock'])
-C3_1=st.selectbox('Hypertension:',['No','Yes'])
-D8_1=st.selectbox('Analgesia during labor:',['No','Yes'])
+C3_1=st.selectbox('Hypertension:',['0:No','1:Yes'])
+D8_1=st.selectbox('Analgesia during labor:',['0:No','1:Yes'])
 ###分类变量变数值
-if A4_1 == "Unemployed":
+if A4_1 == "0:Unemployed":
     A4 = 0
-elif A4_1 == "Light physical labor":
+elif A4_1 == "1:Light physical labor":
     A4 = 1
-elif A4_1 == "Moderate physical labor":
+elif A4_1 == "2:Moderate physical labor":
     A4 = 2
-elif A4_1 == "Heavy physical labor":
+elif A4_1 == "3:Heavy physical labor":
     A4 = 3
 else:
     A4 = 50000
     
-if C9_1 == "No":
+if C9_1 == "0:No":
     C9 = 0
-elif C9_1 == "Yes":
+elif C9_1 == "1:Yes":
     C9 = 1
 else:
     C9 = 50000
     
-if C4_1 == "No":
+if C4_1 == "0:No":
     C4 = 0
-elif C4_1 == "Yes":
+elif C4_1 == "1:Yes":
     C4 = 1
 else:
     C4 = 50000
@@ -156,16 +156,16 @@ else:
     D1=50000
 
     
-if C3_1 == "No":
+if C3_1 == "0:No":
     C3 = 0
-elif C3_1 == "Yes":
+elif C3_1 == "1:Yes":
     C3 = 1
 else:
     C3 = 50000
     
-if D8_1 == "No":
+if D8_1 == "0:No":
     D8 = 0
-elif D8_1 == "Yes":
+elif D8_1 == "1:Yes":
     D8 = 1
 else:
     D8 = 50000
